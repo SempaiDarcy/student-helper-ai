@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Student Helper AI</title>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+<nav class="navbar">
+    <h2>👨‍💻 Student Helper AI</h2>
+</nav>
+
+<main class="container">
+    <!-- Большой аккуратный ввод с авто-ростом -->
+    <label class="sr-only" for="question">Вопрос</label>
+    <textarea id="question"
+              class="autosize"
+              rows="1"
+              placeholder="Напиши вопрос… "></textarea>
+
+    <button id="send" type="button">Отправить</button>
+
+    <!-- Лоадер: 3 точки. По умолчанию скрыт -->
+    <div id="loader" class="dots hidden">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+</main>
+
+<footer>
+    <p>© 2025 Student Helper AI</p>
+</footer>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
